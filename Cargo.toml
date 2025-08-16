@@ -1,0 +1,9 @@
+[package]
+name = "parse_vanilla_shapes"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+luexks_reassembly = { path = "../luexks_reassembly" }
+mlua = { version = "0.11.2", features = ["lua54", "vendored"] }
+regex = "1.11.1"
