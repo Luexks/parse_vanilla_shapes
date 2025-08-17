@@ -66,7 +66,8 @@ mod tests {
 }
 
 pub fn get_vanilla_shapes() -> Shapes {
-    let vanilla_shapes = std::fs::read_to_string("shapes.lua").unwrap();
+    // let vanilla_shapes = std::fs::read_to_string("shapes.lua").unwrap();
+    let vanilla_shapes = include_str!("shapes.lua");
 
     let regex_shape_id = r"\{\s*([A-Z_][A-Z0-9_]*)\s*,";
     let re = Regex::new(regex_shape_id).unwrap();
