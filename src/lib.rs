@@ -45,9 +45,9 @@ mod tests {
                     Palette,
                 ),
                 group: GROUP,
-                color_1: Color::new_rrggbb("7f6538"),
-                color_2: Color::new_rrggbb("49351f"),
-                line_color: Color::new_rrggbb("221e0f"),
+                color_1: Color::new_rrggbb_str("7f6538"),
+                color_2: Color::new_rrggbb_str("49351f"),
+                line_color: Color::new_rrggbb_str("221e0f"),
                 durability: 4.0,
                 density: 0.2,
             )
@@ -66,7 +66,6 @@ mod tests {
 }
 
 pub fn get_vanilla_shapes() -> Shapes {
-    // let vanilla_shapes = std::fs::read_to_string("shapes.lua").unwrap();
     let vanilla_shapes = include_str!("shapes.lua");
 
     let regex_shape_id = r"\{\s*([A-Z_][A-Z0-9_]*)\s*,";
