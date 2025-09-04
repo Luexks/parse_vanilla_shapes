@@ -13,6 +13,8 @@ use luexks_reassembly::{
 use mlua::{Lua, Table, Value};
 use regex::Regex;
 
+pub const VANILLA_SHAPE_COUNT: usize = 68;
+
 mod tests {
     use crate::get_vanilla_shapes;
 
